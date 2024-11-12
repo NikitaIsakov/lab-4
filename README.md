@@ -1,16 +1,10 @@
-# lab-3
-Information systems development. 3 lab
+# lab-4
+Information systems development. 4 lab
 
 ## Предварительные требования
-Убедитесь, что у вас установлен **Maven** - для компиляции и запуска Java-кода.
 Убедитесь, что у вас установлен **PostgreSQL** - для работы с базой данных.
 ## Компиляция проекта
 Перейдите в корневой каталог проекта
-
-Установите зависимости
-```
-mvn install
-```
 
 Подключитесь к PostgreSQL
 ```
@@ -40,6 +34,6 @@ ALTER TABLE public.jewelry_store OWNER TO customer;
 
 Запустите программу:
 ```
-mvn spring-boot:run
+java -jar target/jewelry-app-0.0.1-SNAPSHOT.jar --spring.config.location=classpath:/application.properties
 ```
 
